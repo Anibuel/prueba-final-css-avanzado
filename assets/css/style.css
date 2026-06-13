@@ -144,19 +144,39 @@ body {
   padding: 20px;
 }
 
-footer {
-  grid-area: footer;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  padding: 20px;
-  background: #111;
-  color: white;
+footer{
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    background: #111;
+    color: rgb(207, 97, 97);
+    padding: 30px;
+}
+.redes{
+    display: flex;
+    gap: 20px;
+    font-size: 2rem;
+}
+.redes a{
+  display: inline-block;
+  font-size: 30px;
+  color: #ff0000;
+  margin-right: 10px;
+  animation: flotar 1.5s ease-in-out infinite; 
 }
 
-.redes{
-    text-align: center;
+@keyframes flotar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px); 
+  }
 }
+
 
 .card {
   overflow: hidden;
@@ -184,6 +204,10 @@ footer {
   transform: scale(1.05);
   transition: 0.3s;
 }
+
+
+
+
 
 @media (max-width: 576px){
 
